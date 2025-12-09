@@ -1,0 +1,29 @@
+# Raed's Custom Restaurant Menu
+# id,name,price,category
+
+1,Cheeseburger,8.99,Entree
+2,Grilled Chicken Sandwich,9.49,Entree
+3,Veggie Wrap,7.99,Entree
+4,French Fries,3.49,Side
+5,Side Salad,3.99,Side
+6,Soda,1.99,Drink
+7,Iced Tea,2.29,Drink
+8,Milkshake,4.49,Dessert
+9,Chocolate Cake,5.25,Dessert
+
+# Personalized items based on Raed's tastes + creativity
+10,Shawarma Wrap,8.99,Entree
+11,Mint Lemonade,3.99,Drink
+12,Kunafa,6.49,Dessert
+
+# Fun custom items
+13,Raed Late-Night Snack,5.99,Side
+14,Messi Special Burger,10.99,Entree
+15,Study Session Fries,4.29,Side
+16,Barcelona Blue Drink,3.59,Drink
+17,Champions League Milkshake,4.99,Dessert
+
+# Extra regular menu options
+18,Pepperoni Pizza Slice,4.75,Entree
+19,Chicken Nuggets,5.49,Entree
+20,Mashed Potatoes,2.99,Side

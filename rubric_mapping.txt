@@ -1,0 +1,108 @@
+# ====================================================
+# Final Project Rubric Mapping Checklist
+# Student: Raed Al Kiswani
+# Course: ADD-100 Programming Logic
+# Project: Restaurant Ordering System
+# ====================================================
+#
+# 1. Program Completeness & Functionality
+#    - Files:
+#         - final_project_main.py
+#         - restaurant_system.py
+#         - menu.txt  (input file with menu items)
+#         - receipt.txt (output file with receipt)
+#    - The program:
+#         - Loads menu items from menu.txt
+#         - Lets the user view the menu
+#         - Lets the user add items and quantities to an order
+#         - Shows the current order
+#         - Calculates subtotal, tax, tip, and total
+#         - Creates and saves a text receipt to receipt.txt
+#
+# 2. Code Structure & Organization
+#    - main file: final_project_main.py
+#    - modules / classes file: restaurant_system.py
+#    - Functions in main:
+#         - main()
+#         - load_menu()
+#         - display_menu()
+#         - get_int_input()
+#         - handle_add_item()
+#         - handle_view_order()
+#         - ask_for_tip_percentage()
+#         - handle_checkout()
+#         - save_receipt()
+#         - show_main_menu()
+#    - Classes in separate module:
+#         - MenuItem
+#         - Order
+#
+# 3. Object-Oriented Design (Classes & Objects)
+#    - Class MenuItem:
+#         - Attributes: item_id, name, price, category
+#         - Methods: __init__(), __str__()
+#    - Class Order:
+#         - Attributes: items (dictionary of MenuItem -> quantity)
+#         - Methods:
+#             - add_item()
+#             - calculate_subtotal()
+#             - calculate_tax()
+#             - calculate_tip()
+#             - calculate_total()
+#             - is_empty()
+#             - build_order_summary()
+#             - generate_receipt_text()
+#    - Objects of these classes are created and actually used
+#      to store menu items and build the order.
+#
+# 4. Logic, Loops, and Decisions
+#    - While loop in main():
+#         - Shows main menu until the user chooses Exit.
+#    - While loop in handle_add_item():
+#         - Lets the user keep adding items until they are done.
+#    - if / elif / else:
+#         - Used in main() to handle menu choices (1–4).
+#         - Used in handle_add_item() to check valid item IDs.
+#         - Used in ask_for_tip_percentage() for yes/no choice.
+#    - Basic decision logic to check empty orders before checkout.
+#
+# 5. Error Handling & Input Validation
+#    - get_int_input():
+#         - Uses try/except ValueError to catch non-number input.
+#         - Checks for minimum and maximum values when needed.
+#    - load_menu():
+#         - Uses try/except FileNotFoundError if menu.txt is missing.
+#         - Skips bad lines or lines with wrong data.
+#    - save_receipt():
+#         - Uses try/except when writing to receipt.txt.
+#
+# 6. File Input/Output (Text Files)
+#    - Input:
+#         - load_menu() reads menu items from menu.txt.
+#         - Each line has: id,name,price,category
+#    - Output:
+#         - handle_checkout() creates receipt text.
+#         - save_receipt() writes the receipt to receipt.txt.
+#
+# 7. Documentation & Readability
+#    - Top-of-file header docstring in final_project_main.py
+#      with assignment info and AI use disclosure.
+#    - Docstrings for:
+#         - load_menu(), display_menu(), get_int_input(),
+#           handle_add_item(), handle_view_order(),
+#           ask_for_tip_percentage(), save_receipt(),
+#           handle_checkout(), show_main_menu(), main()
+#    - Docstrings in restaurant_system.py for:
+#         - MenuItem class
+#         - Order class
+#         - Their methods
+#    - Variable and function names are clear and descriptive.
+#
+# 8. Creativity & User Experience
+#    - Text-based interface with clear menu:
+#         - Numbered options for user (1–4).
+#    - Menu display grouped by category (Entree, Side, Drink, Dessert).
+#    - Order summary lines show each item, quantity, and line total.
+#    - Receipt layout is formatted with separators and labels so it
+#      is easy to read for the user.
+# ====================================================
